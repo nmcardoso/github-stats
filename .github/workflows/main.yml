@@ -53,7 +53,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        EXCLUDED: "iagml/iagml.github.io"
+        EXCLUDED: "iagml/iagml.github.io,nmcardoso/files"
         EXCLUDED_LANGS: ""
         EXCLUDE_FORKED_REPOS: true
 
