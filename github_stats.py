@@ -503,7 +503,7 @@ async def main() -> None:
     access_token = os.getenv("ACCESS_TOKEN")
     user = os.getenv("GITHUB_ACTOR")
     async with aiohttp.ClientSession() as session:
-        s = Stats(user, access_token, session, exclude_repos="iagml/iagml.github.io")
+        s = Stats(user, access_token, session, exclude_repos={"iagml/iagml.github.io"})
         print(await s.to_str())
 
 
